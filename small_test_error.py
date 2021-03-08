@@ -2,15 +2,11 @@
 """Small test script for CDS verification"""
 
 from OpenSSL.crypto import (
-    verify,
     load_certificate,
-    load_crl,
     FILETYPE_ASN1,
     FILETYPE_PEM,
     X509Store,
-    X509StoreFlags,
     X509StoreContext,
-    X509StoreContextError,
 )
 
 store = X509Store()
